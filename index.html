@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man City Zone - Latest News</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Man City Zone</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Leagues</a></li>
+                    <li><a href="#">Transfers</a></li>
+                    <li><a href="#">Fixtures</a></li>
+                    <li><a href="#">Stats</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="news-filters">
+            <button class="news-filter active" data-filter="all">All News</button>
+            <button class="news-filter" data-filter="matches">Matches</button>
+            <button class="news-filter" data-filter="transfers">Transfers</button>
+            <button class="news-filter" data-filter="highlights">Highlights</button>
+            <button class="news-filter" data-filter="tactics">Tactics</button>
+        </section>
+
+        <section class="featured-news">
+            <h2>Featured Stories</h2>
+            <div class="news-grid">
+                <article class="news-card" data-category="transfers">
+                    <img src="https://via.placeholder.com/800x450" alt="Transfer News">
+                    <div class="news-content">
+                        <span class="time">Today, 10:45 AM</span>
+                        <h3>Major Transfer Shock: Star Player Agrees Terms with Rival Club</h3>
+                        <p>The 28-year-old has reportedly agreed personal terms ahead of a summer move that will shake up the league.</p>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="tactics">
+                    <img src="https://via.placeholder.com/400x225" alt="Premier League XI">
+                    <div class="news-content">
+                        <span class="time">Today, 09:30 AM</span>
+                        <h3>The Greatest Premier League XI of All Time</h3>
+                        <p>Our experts pick the ultimate dream team from 30 years of Premier League history.</p>
+                    </div>
+                </article>
+
+                <article class="news-card" data-category="matches">
+                    <img src="https://via.placeholder.com/400x225" alt="Manager News">
+                    <div class="news-content">
+                        <span class="time">Today, 08:15 AM</span>
+                        <h3>Manager Announces Shock Resignation</h3>
+                        <p>The coach has decided to step down after three successful seasons.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="latest-news">
+            <h2>Latest Updates</h2>
+            <div class="news-list">
+                <article class="news-item" data-category="transfers">
+                    <span class="time">2 hours ago</span>
+                    <h3>Injury Update: Key Player Ruled Out for Season</h3>
+                </article>
+                <article class="news-item" data-category="matches">
+                    <span class="time">3 hours ago</span>
+                    <h3>Match Preview: Derby Clash This Weekend</h3>
+                </article>
+                <article class="news-item" data-category="transfers">
+                    <span class="time">5 hours ago</span>
+                    <h3>Young Talent Signs First Professional Contract</h3>
+                </article>
+                <article class="news-item" data-category="highlights">
+                    <span class="time">Yesterday</span>
+                    <h3>Club Announces New Stadium Plans</h3>
+                </article>
+            </div>
+        </section>
+
+        <div id="loading-indicator" style="display:none;">Loading news...</div>
+        <div id="error-message" style="display:none;"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Man City Zone. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
